@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+        function checkNumber(num,arr){
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+        if (arr.indexOf(num) !== -1){
+        alert("Số " + num + " có nằm trong mảng");
+        count++
+        break;
+    }
+    }
+        if (count === 0){
+        alert("Số " + num + " không nằm trong mảng")
+    }
+    }
+
+        let num = +prompt("Nhập số bất kỳ")
+        let arr = [1,2,3,4,5];
+        checkNumber(num, arr);
+
+</script>
+</body>
+</html>
